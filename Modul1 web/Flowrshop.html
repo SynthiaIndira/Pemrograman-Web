@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooming Bliss</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f8dfe6;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #c35a7a;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #ffe4e9;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            color: #c35a7a;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            background-color: #c35a7a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        main {
+            padding: 40px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        main h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .flower-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .flower-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .flower-item img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .flower-item p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .flower-item span {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        footer {
+            background-color: #f8dfe6;
+            padding: 30px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .social-icons {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            color: #333;
+            font-size: 20px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .social-icons span {
+            margin-left: 5px;
+            font-size: 16px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        form input {
+            padding: 10px;
+            width: 250px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            padding: 10px;
+            background-color: #c35a7a;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">BLOOMING BLISS</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Flowers</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Beautiful Bouquets, Delivered to You</h1>
+        <button>Shop Now</button>
+    </section>
+
+    <main>
+        <h2>Our Collection</h2>
+        <div class="flower-grid">
+            <div class="flower-item">
+                <img src="IMG_6053.JPG" alt="Monstera Deliciosa">
+                <p>Monstera Deliciosa</p>
+                <span>Rp. 700.000,00</span>
+            </div>
+            <div class="flower-item">
+                <img src="IMG_6050.JPG" alt="Bunga Anggrek">
+                <p>Bunga Anggrek</p>
+                <span>Rp. 800.000,00</span>
+            </div>
+            <div class="flower-item">
+                <img src="IMG_6054.JPG" alt="Dieffenbachia">
+                <p>Dieffenbachia</p>
+                <span>Rp. 500.000,00</span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Contact Us : info@bloomingbliss.com</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+            <a href="#"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+            <a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+        </div>
+        <form>
+            <label for="newsletter">Subscribe to our newsletter:</label>
+            <input type="email" id="newsletter" placeholder="Your Email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </footer>
+</body>
+</html>
